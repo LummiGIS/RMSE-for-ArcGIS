@@ -14,16 +14,17 @@ try:
             print "Field already exists"
         
 
-    TheFeatureClassOfPoints = arcpy.GetParameterAsText(0)
-    InterpolatedValueField = arcpy.GetParameterAsText(1)
-    SurveyedValue = arcpy.GetParameterAsText(2)
-    RMSEField = arcpy.GetParameterAsText(3)
+ 
+    #################        SET PARAMETERS HERE  ####################################
     
-    
-    #TheFeatureClassOfPoints = r"RMSEtest"
-    #InterpolatedValueField = r"dronez"
-    #SurveyedValue = r"LiDARz"
-    #RMSEField = r"RMSE"
+    TheFeatureClassOfPoints = r"RMSEtest"
+    InterpolatedValueField = r"dronez"
+    SurveyedValue = r"LiDARz"
+    RMSEField = r"RMSE"
+
+
+    ##################################################################################
+
     
     SquaredValues = []
     
